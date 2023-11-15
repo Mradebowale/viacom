@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>CONTACT US 2</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
